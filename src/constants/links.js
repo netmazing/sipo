@@ -1,8 +1,8 @@
 export default [
-    {
-        path: '/',
-        name: 'start',
-    },
+    // {
+    //     path: '/',
+    //     name: 'start',
+    // },
     {
         path: '/zespol',
         name: 'zespół',

@@ -1,7 +1,7 @@
 import React from 'react';
 import Layout from '../components/Layout';
 
-const events = () => {
+const news = () => {
     return (
         <Layout>
             wydarzenia
@@ -9,4 +9,4 @@ const events = () => {
     )
 }
 
-export default events
+export default news

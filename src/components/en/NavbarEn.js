@@ -1,10 +1,9 @@
 import React, {useState} from 'react';
 import {Link} from "gatsby";
-import "../css/navbar.css";
-// import { FaBars } from 'react-icons/fa';
-import links from '../constants/links';
+import "../../css/navbar.css";
+import linksEn from '../../constants/linksEn';
 
-const Navbar = () => {
+const NavbarEn = () => {
   const [isOpen, setNav] = useState(false);
   const toggleNav = () => {
     setNav(isOpen => !isOpen);
@@ -13,7 +12,7 @@ const Navbar = () => {
         <nav className="navbar">
           <div className="menu">
             <div className="menu__header">
-              <Link to='/' className="menu__logo">Logo</Link>
+              <Link to='/en' className="menu__logo">Logo</Link>
               <button type="button" className={isOpen ? "menu__hamburger menu__hamburger--open" : "menu__hamburger"} onClick={toggleNav}>
                 <span className="hamburger__box">
                   <span className="hamburger__inner"></span>
@@ -22,7 +21,7 @@ const Navbar = () => {
             </div>
 
             <ul className={isOpen ? "menu__links menu__links--open" : "menu__links"}>
-              {links.map((link, index) => {
+              {linksEn.map((link, index) => {
                 return(
                   <li className="menu__item" key={index}><Link className="menu__link" activeClassName="menu__link--active" to={link.path}>
                   {link.name}
@@ -41,4 +40,4 @@ const Navbar = () => {
     )
 }
 
-export default Navbar
+export default NavbarEn
