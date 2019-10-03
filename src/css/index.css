@@ -103,7 +103,6 @@
     background-color: rgba(1, 135, 145, 0.5);
     color: #fff;
     transition: all .3s;
-    z-index: 999;
 }
 
 .btn__icon {
