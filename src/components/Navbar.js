@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import {Link} from "gatsby";
 import "../css/navbar.css";
-// import { FaBars } from 'react-icons/fa';
 import links from '../constants/links';
 
 const Navbar = () => {
