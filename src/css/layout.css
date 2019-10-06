@@ -26,7 +26,6 @@ body {
     font-family: var(--primary-font);
     font-size: 16px;
     line-height: 1.6;
-    height: 200vh;
 }
 
 ::-webkit-scrollbar {
@@ -48,6 +47,7 @@ h1, h2, h3 {
 
 h1 {
     text-align: center;
+    color: var(--primary-color)
 }
 
 h2 {
@@ -101,7 +101,7 @@ h2 {
     transform: translateX(100%);
 }
 
-.btn:hover {
+.btn:hover, .btn:focus {
     color: #fff;
     background-color: var(--primary-color);
     transition: color .2s .1s linear, background-color .2s .1s linear;

@@ -22,7 +22,7 @@ const Footer = () => {
                 <div className="footer__icon">Logo</div>
                 <div className="footer__icon">Logo</div>
             </div>
-            <p className="footer__info">ul. Krakowska 71-71, 71-004 Szczecin</p>
+            <p className="footer__info">ul. Krakowska 71-79, 71-004 Szczecin</p>
             <p className="footer__copyrights">&copy; {new Date().getFullYear()} Socjologia i Psychologia Organizacji.<br/>Projekt i wykonanie <span className="site-author">{data.site.siteMetadata.author}</span></p>
         </footer>
     )

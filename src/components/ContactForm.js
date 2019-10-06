@@ -14,9 +14,9 @@ export default class ContactForm extends Component {
     }
 
     errorMessages = {
-        nameIncorrect: 'Podaj imię i nazwisko.',
-        emailIncorrect: 'Podaj prawidłowy adres email.',
-        messageIncorrect: 'Wpisz swoją wiadomość.'
+        nameIncorrect: 'Podaj imię i nazwisko',
+        emailIncorrect: 'Podaj prawidłowy adres e-mail',
+        messageIncorrect: 'Wpisz swoją wiadomość'
     }
 
     handleChange = (e) => {
@@ -37,7 +37,7 @@ export default class ContactForm extends Component {
             name = true
         };
 
-        if(this.state.email.indexOf('@') !== -1) {
+        if(this.state.email.length > 5 && this.state.email.indexOf('@') !== -1 && this.state.email.indexOf('.') !== -1)  {
             email = true
         };
 
@@ -81,21 +81,20 @@ export default class ContactForm extends Component {
             <form className="contact-form" onSubmit={this.handleSubmit} action={this.state.correct ? "https://formspree.io/xqraplqm" : ""} method={this.state.correct ? "POST" : ""}>
                 <p className="contact-form__field">
                     <label className="contact-form__label" htmlFor="name">Imię i nazwisko</label>
-                    <input className="contact-form__input" type="text" name="name" id="name" value={this.state.name} onChange={this.handleChange}/>
+                    <input className={this.state.errors.nameError && (this.state.name.length <= 5 || this.state.name.indexOf(' ') === -1) ? "contact-form__input contact-form__input--incorrect" : "contact-form__input"} type="text" name="name" id="name" placeholder="Jan Kowalski" value={this.state.name} onChange={this.handleChange}/>
+                    {this.state.errors.nameError && (this.state.name.length <= 5 || this.state.name.indexOf(' ') === -1) ? <span className="contact-form__error">{this.errorMessages.nameIncorrect}</span> : ""}
                 </p>
                 <p className="contact-form__field">
-                    <label className="contact-form__label" htmlFor="email">Email</label>
-                    <input className="contact-form__input" type="email" name="email" id="email" value={this.state.email} onChange={this.handleChange}/>
+                    <label className="contact-form__label" htmlFor="email">E-mail</label>
+                    <input className={this.state.errors.emailError && (this.state.email.length <= 5 || this.state.email.indexOf('@') === -1 || this.state.email.indexOf('@') === (this.state.email.length - 1) || this.state.email.indexOf('.') === -1 || this.state.email.indexOf('.') === (this.state.email.length - 1) ) ? "contact-form__input contact-form__input--incorrect" : "contact-form__input"} type="email" name="email" id="email" placeholder="email@email.com" value={this.state.email} onChange={this.handleChange}/>
+                    {this.state.errors.emailError && (this.state.email.length <= 5 || this.state.email.indexOf('@') === -1 || this.state.email.indexOf('@') === (this.state.email.length - 1) || this.state.email.indexOf('.') === -1 || this.state.email.indexOf('.') === (this.state.email.length - 1) ) ? <span className="contact-form__error">{this.errorMessages.emailIncorrect}</span> : ""}
                 </p>
                 <p className="contact-form__field">
                     <label className="contact-form__label" htmlFor="message">Wiadomość</label>
-                    <textarea className="contact-form__textarea" name="message" id="message" cols="30" rows="10" value={this.state.message} onChange={this.handleChange}></textarea>
+                    <textarea className={this.state.errors.messageError && this.state.message.length <= 10 ? "contact-form__textarea contact-form__textarea--incorrect" : "contact-form__textarea"} name="message" id="message" placeholder="Twoja wiadomość" cols="30" rows="10" value={this.state.message} onChange={this.handleChange}></textarea>
+                    {this.state.errors.messageError && this.state.message.length <= 10 ? <span className="contact-form__error">{this.errorMessages.messageIncorrect}</span> : ""}
                 </p>
                 <button type="submit" className="contact-form__btn btn">Wyślij</button>
-                
-                {this.state.errors.nameError && <span className="contact-form__error">{this.errorMessages.nameIncorrect}</span>}
-                {this.state.errors.emailError && <span className="contact-form__error">{this.errorMessages.emailIncorrect}</span>}
-                {this.state.errors.messageError && <span className="contact-form__error">{this.errorMessages.messageIncorrect}</span>}
             </form>
         )
     }
