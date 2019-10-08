@@ -1,3 +1,6 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
 module.exports = {
   siteMetadata: {
     title: `Socjologia i psychologia organizacji`,
@@ -18,20 +21,25 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Socjologia i Psychologia Organizacji`,
+        short_name: `SIPO`,
+        description: `Interdyscyplinarny zespół badawczy`,
+        lang: `pl`,
         start_url: `/`,
         background_color: `rgb(1, 135, 145)`,
         theme_color: `rgb(1, 135, 145)`,
-        display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        display: `standalone`,
+        icon: `src/images/gatsby-icon.png`,
+        localize: [
+          {
+            start_url: `/en/`,
+            lang: `en`,
+            name: `Organizational Socjology and Psychology`,
+            short_name: `OSAP`,
+            description: `Interdisciplinary Research Group`,
+          },
+        ],
       },
-    },
-    {
-      resolve: 'gatsby-plugin-html-attributes',
-      options: {
-        lang: 'pl',
-      }
     },
     {
       resolve: `gatsby-source-filesystem`,
@@ -40,6 +48,13 @@ module.exports = {
         path: `${__dirname}/src/images/`,
       },
     },
-    `gatsby-plugin-transition-link`
+    `gatsby-plugin-transition-link`,
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: process.env.CONTENTFUL_SPACE_ID,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+      },
+    },
   ],
 }

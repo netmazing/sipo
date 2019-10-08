@@ -1,8 +1,7 @@
 import React from 'react';
 import Layout from '../components/Layout';
-import { FaAngleDoubleDown } from 'react-icons/fa';
 import {graphql} from 'gatsby';
-import {Link} from 'gatsby';
+import AniLink from "gatsby-plugin-transition-link/AniLink";
 import '../css/index.css';
 import '../css/about.css';
 import '../css/actions.css';
@@ -15,10 +14,9 @@ const index = ({data}) => {
         <div className="hero__inner">
           <h1 className="hero__title site-title">{data.site.siteMetadata.title}</h1>
           <p className="hero__description">Zespół badawczy</p>
-          <a href="#about" className="hero__btn">Poznaj nas<span className="btn__icon"><FaAngleDoubleDown/></span></a>
           <div className="hero__links">
-            <a href="http://usz.edu.pl/" className="hero__link link">Uniwersytet Szczeciński</a>
-            <a href="http://wh.usz.edu.pl/" className="hero__link link">Wydział Humanistyczny US</a>
+            <a href="http://usz.edu.pl/" className="hero__link">Uniwersytet Szczeciński</a>
+            <a href="http://wh.usz.edu.pl/" className="hero__link">Wydział Humanistyczny US</a>
           </div>
         </div>
       </header>
@@ -75,8 +73,8 @@ const index = ({data}) => {
           </ul>
 
           <div className="actions__links">
-            <Link className="actions__btn btn" to="/publikacje">Poczytaj nasze artykuły</Link>
-            <Link className="actions__btn btn" to="/wydarzenia">Zobacz, co organizujemy</Link>
+            <AniLink className="actions__btn btn" fade to="/publikacje">Poczytaj nasze artykuły</AniLink>
+            <AniLink className="actions__btn btn" fade to="/wydarzenia">Zobacz, co organizujemy</AniLink>
           </div>
         </section>
 

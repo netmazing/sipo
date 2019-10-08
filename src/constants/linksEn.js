@@ -13,7 +13,7 @@ export default [
     },
     {
         path: '/en/news',
-        name: 'events',
+        name: 'news',
     },
     {
         path: '/en/contact',

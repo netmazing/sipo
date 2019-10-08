@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Link} from "gatsby";
+import AniLink from "gatsby-plugin-transition-link/AniLink";
 import "../../css/navbar.css";
 import linksEn from '../../constants/linksEn';
 
@@ -12,7 +12,7 @@ const NavbarEn = () => {
         <nav className="navbar">
           <div className="menu">
             <div className="menu__header">
-              <Link to='/en' className="menu__logo">Logo</Link>
+              <AniLink fade to='/en' className="menu__logo">Logo</AniLink>
               <button type="button" className={isOpen ? "menu__hamburger menu__hamburger--open" : "menu__hamburger"} onClick={toggleNav}>
                 <span className="hamburger__box">
                   <span className="hamburger__inner"></span>
@@ -23,16 +23,16 @@ const NavbarEn = () => {
             <ul className={isOpen ? "menu__links menu__links--open" : "menu__links"}>
               {linksEn.map((link, index) => {
                 return(
-                  <li className="menu__item" key={index}><Link className="menu__link" activeClassName="menu__link--active" to={link.path}>
+                  <li className="menu__item" key={index}><AniLink className="menu__link" activeClassName="menu__link--active" fade to={link.path}>
                   {link.name}
-                  </Link></li>
+                  </AniLink></li>
                 )
               })}
             </ul>
 
             <ul className={isOpen ? "select-language select-language--open": "select-language"}>
-                <Link className="language-option" to="/" >pl</Link>
-                <Link className="language-option" to="/en">en</Link>
+                <AniLink className="language-option" fade to="/" >pl</AniLink>
+                <AniLink className="language-option" fade to="/en">en</AniLink>
             </ul>
 
           </div> 
