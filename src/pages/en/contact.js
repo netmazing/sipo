@@ -8,7 +8,7 @@ const contactEn = () => {
     return (
         <LayoutEn>
             <main className="contact">
-                    <h1 className="contact__title">Contact Us</h1>
+                    <h1 className="contact__title title">Contact Us</h1>
                     <div className="contact__wrapper">
                     <address className="contact__data">
                         <p className="data__title data-field">Organizational Socjology and Psychology<br/>Dr hab. Agnieszka Kołodziej-Durnaś prof. US</p>

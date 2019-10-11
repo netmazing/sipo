@@ -8,11 +8,10 @@ const contact = () => {
     return (
         <Layout>
             <main className="contact">
-                    <h1 className="contact__title">Skontaktuj się z nami</h1>
+                    <h1 className="contact__title title">Skontaktuj się z nami</h1>
                     <div className="contact__wrapper">
                     <address className="contact__data">
                         <p className="data__title data-field">Socjologia i psychologia organizacji<br/>Dr hab. Agnieszka Kołodziej-Durnaś prof. US</p>
-                        {/* <p className="data__title data-field"></p> */}
                         <a href="tel:+48123456789" className="data__tel data-field">
                             <FaPhone className="data__icon icon-tel"/>
                             <span>123 456 789</span>

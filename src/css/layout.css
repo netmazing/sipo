@@ -7,7 +7,6 @@
     --primary-color-light: rgb(126, 185, 183);
     --light: #FFF;
     --dark: #1A1A1A;
-    /* --dark: #222; */
     --outline-text-shadow: 1px 1px 0 black, 1px -1px 0 black, -1px 1px 0 black, -1px -1px 0 black, 1px 0px 0 black, 0px 1px 0 black, -1px 0px 0 black, 0px -1px 0 black;
 }
 
@@ -19,7 +18,7 @@
 }
 
 body {
-    font-family: var(--primary-font);
+    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     line-height: 1.6;
 }
@@ -43,31 +42,52 @@ h1, h2, h3 {
 
 h1 {
     text-align: center;
-    color: var(--primary-color)
 }
 
 h2 {
     color: var(--primary-color)
 }
 
+.title {
+    position: relative;
+    z-index: 1;
+    padding: 40px 0;
+    font-size: 22px;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+@media (min-width: 320px) {
+    .title {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 600px) {
+    .title {
+        font-size: 26px;
+    }
+}
+
+@media (min-width: 1024px){
+    .title {
+        font-size: 30px;
+    }
+}
+
 .btn {
+    display: block;
+    position: relative;
     text-decoration: none;
     padding: 8px 24px;
     letter-spacing: 1px;
     cursor: pointer;
     font-size: 14px;
-    position: relative;
     font-weight: bold;
     overflow: hidden;
     border: 2px solid var(--primary-color);
     color: var(--primary-color);
     transition: color .2s 0s linear, background-color .2s 0s linear
-}
-
-@media(min-width: 768px) {
-    .btn {
-        font-size: 18px;
-    }
 }
 
 .btn::before, .btn::after {
@@ -106,6 +126,12 @@ h2 {
     transition: transform .2s linear;
 }
 
+@media(min-width: 768px) {
+    .btn {
+        font-size: 18px;
+    }
+}
+
 
 li {
     list-style: none;
@@ -118,4 +144,44 @@ li {
     line-height: 1.6;
     text-decoration: none;
     cursor: pointer;
+}
+
+.header {
+    margin-top: 82px;
+    height: 40vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(2, 63, 77, .85);
+}
+
+@media (min-height: 600px) and (orientation: portrait) {
+    .header {
+        height: 30vh;
+    }
+}
+
+@media (min-width: 1024px) {
+    .header {
+        margin-top: 62px;
+    }
+}
+
+@media (min-width: 1024px) and (orientation: landscape) {
+    .header {
+        height: 50vh;
+    }
 }

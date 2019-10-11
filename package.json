@@ -12,6 +12,7 @@
     "gatsby-plugin-html-attributes": "^1.0.5",
     "gatsby-plugin-manifest": "^2.2.18",
     "gatsby-plugin-offline": "^3.0.8",
+    "gatsby-plugin-playground": "^1.0.6",
     "gatsby-plugin-react-helmet": "^3.1.8",
     "gatsby-plugin-sharp": "^2.2.25",
     "gatsby-plugin-transition-link": "^1.13.0",

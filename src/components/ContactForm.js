@@ -94,6 +94,7 @@ export default class ContactForm extends Component {
                     <textarea className={this.state.errors.messageError && this.state.message.length <= 10 ? "contact-form__textarea contact-form__textarea--incorrect" : "contact-form__textarea"} name="message" id="message" placeholder="Twoja wiadomość" cols="30" rows="10" value={this.state.message} onChange={this.handleChange}></textarea>
                     {this.state.errors.messageError && this.state.message.length <= 10 ? <span className="contact-form__error">{this.errorMessages.messageIncorrect}</span> : ""}
                 </p>
+                <p className="contact-form__agreement">Wysyłając wiadomość, zgadzasz się na przetwarzanie Twoich danych osobowych przez Zespół Badawczy Socjologia i Psychologia Organizacji. Twoje dane osobowe będą przetwarzane wyłacznie w celu udzielenia odpowiedzi na Twoją wiadomość.</p>
                 <button type="submit" className="contact-form__btn btn">Wyślij</button>
             </form>
         )
