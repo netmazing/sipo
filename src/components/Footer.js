@@ -2,6 +2,7 @@ import React from 'react';
 import '../css/footer.css';
 import {useStaticQuery} from 'gatsby';
 import {graphql} from 'gatsby';
+// import LogoUS from '../images/logo-us.png';
 
 const getSiteAuthor = graphql`
 query SiteAuthor {
@@ -14,11 +15,14 @@ query SiteAuthor {
 `
 
 const Footer = () => {
-    const data = useStaticQuery(getSiteAuthor)
+    const data = useStaticQuery(getSiteAuthor);
     return (
         <footer className="footer">
             <div className="footer__icons">
-                <div className="footer__icon">Logo</div>
+                <div className="footer__icon">
+                  {/* <img src={LogoUS} alt="logo US"/> */}
+                  Logo
+                </div>
                 <div className="footer__icon">Logo</div>
                 <div className="footer__icon">Logo</div>
             </div>

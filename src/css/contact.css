@@ -9,7 +9,7 @@
 }
 
 .contact__title {
-    color: var(--primary-color);
+    color: rgb(1, 135, 145);
 }
 
 .contact__data, .contact-form {
@@ -33,13 +33,13 @@
 .data__tel:hover,
 .data__email:hover,
 .data__address:hover {
-    color: var(--primary-color)
+    color: rgb(1, 135, 145);
 }
 
 .data__icon {
     font-size: 20px;
     margin-right: 10px;
-    color: var(--primary-color)
+    color: rgb(1, 135, 145);
 }
 
 .icon-tel {
@@ -68,8 +68,8 @@
     padding: 6px 10px;
     border: none;
     border: 2px solid transparent;
-    border-bottom-color: var(--primary-color);
-    font-family: var(--primary-font);
+    border-bottom-color: rgb(1, 135, 145);
+    font-family: 'Open-Sans', sans-serif;
 }
 
 .contact-form__textarea {
@@ -84,7 +84,7 @@
 .contact-form__input:focus,
 .contact-form__textarea:focus {
     outline: none;
-    border-color: var(--primary-color);
+    border-color: rgb(1, 135, 145);
 }
 
 .contact-form__input--incorrect,
@@ -153,7 +153,7 @@
         top: 65%;
         left: 0;
         transform: rotate(-30deg);
-        background-color: var(--primary-color);
+        background-color: rgb(1, 135, 145);
         z-index: -1;
     }
 

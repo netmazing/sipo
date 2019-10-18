@@ -18,13 +18,13 @@
 
 .hero__title {
     margin: 0 0 10px;
-    color: var(--light);
+    color: #fff;
     font-size: 20px;
     letter-spacing: 1px;
 }
 
 .hero__description {
-    color: var(--light);
+    color: #fff;
     font-size: 16px;
     line-height: 1.5;
     text-align: center;
@@ -143,7 +143,7 @@
 
 .hero__link:hover, .hero__link:focus {
     background-color: #fff;
-    color: var(--primary-color);
+    color: rgb(1, 135, 145);
     transition: background-color .2s .2s linear, color .2s .2s linear;
 }
 

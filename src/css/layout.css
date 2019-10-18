@@ -7,14 +7,13 @@
     --primary-color-light: rgb(126, 185, 183);
     --light: #FFF;
     --dark: #1A1A1A;
-    --outline-text-shadow: 1px 1px 0 black, 1px -1px 0 black, -1px 1px 0 black, -1px -1px 0 black, 1px 0px 0 black, 0px 1px 0 black, -1px 0px 0 black, 0px -1px 0 black;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    outline-color: var(--primary-color);
+    outline-color: rgb(1, 135, 145);
 }
 
 body {
@@ -33,7 +32,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: var(--primary-color);
+    background-color: rgb(1, 135, 145);
 }
 
 h1, h2, h3 {
@@ -45,7 +44,7 @@ h1 {
 }
 
 h2 {
-    color: var(--primary-color)
+    color: rgb(1, 135, 145);
 }
 
 .title {
@@ -85,8 +84,8 @@ h2 {
     font-size: 14px;
     font-weight: bold;
     overflow: hidden;
-    border: 2px solid var(--primary-color);
-    color: var(--primary-color);
+    border: 2px solid rgb(1, 135, 145);
+    color: rgb(1, 135, 145);
     transition: color .2s 0s linear, background-color .2s 0s linear
 }
 
@@ -95,7 +94,7 @@ h2 {
     position: absolute;
     width: 100%;
     height: 25%;
-    background-color: var(--primary-color);
+    background-color: rgb(1, 135, 145);
     z-index: -1;
     transition: transform .2s .1s linear;
 }
@@ -103,7 +102,7 @@ h2 {
 .btn::before {
     bottom: 0;
     left: 0;
-    transform: translateX(-100%);
+    transform: translateX(-105%);
     transform-origin: left;
 }
 
@@ -111,12 +110,12 @@ h2 {
     top: 0;
     right: 0;
     transform-origin: right;
-    transform: translateX(100%);
+    transform: translateX(105%);
 }
 
 .btn:hover, .btn:focus {
     color: #fff;
-    background-color: var(--primary-color);
+    background-color: rgb(1, 135, 145);
     transition: color .2s .1s linear, background-color .2s .1s linear;
 }
 

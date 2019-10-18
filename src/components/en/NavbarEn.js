@@ -13,7 +13,7 @@ const NavbarEn = () => {
           <div className="menu">
             <div className="menu__header">
               <AniLink fade to='/en' className="menu__logo">Logo</AniLink>
-              <button type="button" className={isOpen ? "menu__hamburger menu__hamburger--open" : "menu__hamburger"} onClick={toggleNav}>
+              <button type="button" aria-label="menu" title="menu" className={isOpen ? "menu__hamburger menu__hamburger--open" : "menu__hamburger"} onClick={toggleNav}>
                 <span className="hamburger__box">
                   <span className="hamburger__inner"></span>
                 </span>

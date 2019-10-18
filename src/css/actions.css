@@ -24,7 +24,7 @@
     padding: 20px 0;
     width: 280px;
     text-align: center;
-    border-bottom: 2px solid var(--primary-color);
+    border-bottom: 2px solid rgb(1, 135, 145);
 }
 
 .actions__item * {

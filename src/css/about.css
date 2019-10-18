@@ -11,7 +11,7 @@ background: linear-gradient(rgb(255, 255, 255), rgba(126, 185, 183) 170%)
 }
 
 .about__title, .subsection__title {
-    color: var(--primary-color);
+    color: rgb(1, 135, 145);
     font-weight: bold;
 }
 

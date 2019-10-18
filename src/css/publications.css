@@ -21,11 +21,11 @@
 
 .publication__author {
     font-weight: bold;
-    color: var(--primary-color);
+    color: rgb(1, 135, 145);
 }
 
 .subsection__info.publication__description {
-    margin: 0;
+    margin: auto;
 }
 
 .publication__link {

@@ -16,7 +16,7 @@ const index = ({data}) => {
           <p className="hero__description">Zespół badawczy</p>
           <div className="hero__links">
             <a href="http://usz.edu.pl/" className="hero__link">Uniwersytet Szczeciński</a>
-            <a href="http://wh.usz.edu.pl/" className="hero__link">Wydział Humanistyczny US</a>
+            <a href="http://wh.usz.edu.pl/" className="hero__link">Wydział Nauk Społecznych</a>
           </div>
         </div>
       </header>
