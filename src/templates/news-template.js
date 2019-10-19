@@ -3,12 +3,14 @@ import {graphql} from 'gatsby';
 import Layout from '../components/Layout';
 import '../css/news-template.css';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
+import SEO from '../components/SEO';
 
 const NewsTemplate = ({data}) => {
     const {nazwa, miejsce, opis:{json}} = data.news;
     
     return (
         <Layout>
+          <SEO title={nazwa} />
           <main className="news-page">
             <h1 className="news-page__title title">{nazwa}</h1>
             <div className="news-page__info">

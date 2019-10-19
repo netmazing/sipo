@@ -2,11 +2,13 @@ import React from 'react';
 import LayoutEn from '../../components/en/LayoutEn';
 import { FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import ContactFormEn from '../../components/en/ContactFormEn';
-import '../../css/contact.css'
+import '../../css/contact.css';
+import SEOen from '../../components/en/SEOen';
 
 const contactEn = () => {
     return (
         <LayoutEn>
+            <SEOen title="Contact" />
             <main className="contact">
                     <h1 className="contact__title title">Contact Us</h1>
                     <div className="contact__wrapper">

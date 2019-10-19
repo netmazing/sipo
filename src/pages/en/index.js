@@ -2,13 +2,13 @@ import React from 'react';
 import LayoutEn from '../../components/en/LayoutEn';
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 import '../../css/index.css';
-// import { Helmet } from 'react-helmet';
-
+import SEOen from '../../components/en/SEOen';
 
 const indexEn = () => {
   return (
     <div className="homepage">
     <LayoutEn>
+      <SEOen />
       <header className="hero">
         <div className="hero__inner">
           <h1 className="hero__title site-title">Organizational Sociology and Psychology</h1>

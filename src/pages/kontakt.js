@@ -2,11 +2,13 @@ import React from 'react';
 import { FaEnvelope, FaMapMarkerAlt } from "react-icons/fa"
 import Layout from '../components/Layout';
 import ContactForm from '../components/ContactForm';
-import '../css/contact.css'
+import '../css/contact.css';
+import SEO from '../components/SEO';
 
 const contact = () => {
     return (
         <Layout>
+            <SEO title="Kontakt" desccription="Skontaktuj się z nami"/>
             <main className="contact">
                     <h1 className="contact__title title">Skontaktuj się z nami</h1>
                     <div className="contact__wrapper">

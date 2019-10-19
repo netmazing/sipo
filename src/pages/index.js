@@ -5,11 +5,13 @@ import AniLink from "gatsby-plugin-transition-link/AniLink";
 import '../css/index.css';
 import '../css/about.css';
 import '../css/actions.css';
+import SEO from '../components/SEO';
 
 const index = ({data}) => {
   return (
     <div className="homepage">
     <Layout>
+      <SEO />
       <header className="hero">
         <div className="hero__inner">
           <h1 className="hero__title site-title">{data.site.siteMetadata.title}</h1>

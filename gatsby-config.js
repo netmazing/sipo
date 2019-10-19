@@ -6,6 +6,9 @@ module.exports = {
     title: `Socjologia i psychologia organizacji`,
     description: `Interdyscyplinarny zespół badawczy`,
     author: `Trojnacki & Draganek`,
+    siteUrl: `https://sipo.netlify.com`,
+    titleEn: `Organizational Socjology and Psychology`,
+    descriptionEn: `Interdisciplinary Research Group`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -50,11 +53,20 @@ module.exports = {
     },
     `gatsby-plugin-transition-link`,
     `gatsby-plugin-playground`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-source-contentful`,
       options: {
         spaceId: process.env.CONTENTFUL_SPACE_ID,
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://sipo.netlify.com',
+        sitemap: 'https://sipo.netlify.com/sitemap.xml',
+        policy: [{ userAgent: '*', allow: '/' }]
       },
     },
   ],

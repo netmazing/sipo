@@ -2,11 +2,13 @@ import React from 'react';
 import Layout from '../components/Layout';
 import {graphql} from 'gatsby';
 import '../css/publications.css';
+import SEO from '../components/SEO';
 
 const publicationsPage = ({data}) => {
   const publications = data.publications.edges;
   return (
     <Layout>
+        <SEO title="Publikacje" description="Arytukły naukowe, rozprawy, wyniki badań nad procesami, przemianami i relacjami w organizacjach" />
         <main className="publications">
           <header className="publications__header header">
             <h1 className="publications__title title">Publikacje</h1>

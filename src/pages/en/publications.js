@@ -2,11 +2,13 @@ import React from 'react';
 import LayoutEn from '../../components/en/LayoutEn';
 import {graphql} from 'gatsby';
 import '../../css/publications.css';
+import SEOen from '../../components/en/SEOen';
 
 const publicationsPageEn = ({data}) => {
   const publications = data.publicationsEn.edges;
   return (
     <LayoutEn>
+      <SEOen title="Publications" />
       <main className="publications">
         <header className="publications__header header">
           <h1 className="publications__title title">Publications</h1>

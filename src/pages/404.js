@@ -1,10 +1,12 @@
 import React from 'react';
 import Layout from '../components/Layout';
-import '../css/404.css'
+import '../css/404.css';
+import SEO from '../components/SEO';
 
 const page404 = () => {
   return (
     <Layout>
+      <SEO title="Błąd" />
       <div className="error-page">
         <div className="error-page__section">
           <p className="error-page__info">Nie ma takiej strony</p>
