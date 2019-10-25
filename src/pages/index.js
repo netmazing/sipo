@@ -26,27 +26,24 @@ const index = ({data}) => {
         <article id="about" className="about">
           <div className="about__inner">
           <h2 className="about__title">Organizacja jako obszar badań</h2>
-          <p className="about__info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quaerat, qui nam illo fugit exercitationem repudiandae maiores iure ullam obcaecati!</p>
 
           <section className="subsection">
-            <h3 className="subsection__title">Procesy i przemiany</h3>
-            <p className="subsection__info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum aut nostrum nam numquam minus perferendis, natus vel quisquam alias quam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores similique, recusandae inventore ipsum repudiandae autem reprehenderit, amet dolorum deserunt doloremque fugiat magni totam deleniti in ipsam debitis iusto nihil reiciendis.</p>
+            <h3 className="subsection__title">Organizacja i zarządzanie</h3>
+            <p className="subsection__info">W 2007 roku zostałam poproszona o przygotowanie rozdziału do księgi jubileuszowej prof. Stanisława Kosińskiego. Był to dla mnie zaszczyt. Napisałam tekst pod tytułem „Hierarchia relacji mistrz-uczeń a heterarchia sieci badawczych - uwagi o współczesnych uczonych”. Nadchodziło nowe. I choć w roku 2015 utworzyłam Zakład Socjologii Organizacji i Zarządzania wiedziałam, że nie będzie to sztywna struktura.</p>
+            <a href="https://www.researchgate.net/publication/317826011_Hierarchia_relacji_mistrz-uczen_a_heterarchia_sieci_badawczych_-_uwagi_o_wspolczesnych_uczonych" className="btn about__btn">Czytaj artykuł</a>
           </section>
 
           <section className="subsection">
-            <h3 className="subsection__title">Struktura</h3>
-            <p className="subsection__info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum aut nostrum nam numquam minus perferendis, natus vel quisquam alias quam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores similique, recusandae inventore ipsum repudiandae autem reprehenderit, amet dolorum deserunt doloremque fugiat magni totam deleniti in ipsam debitis iusto nihil reiciendis.</p>
+            <h3 className="subsection__title">Działalność</h3>
+            <p className="subsection__info">W ciągu niespełna pięciu lat wraz z zespołem zorganizowaliśmy osiem ogólnopolskich konferencji, wydaliśmy kilka ważnych – jak nam się wydaje – publikacji. Dziś tworzymy zespół Socjologii i Psychologii Organizacji – grupę badawczą w nowej strukturze Uniwersytetu.</p>
           </section>
 
           <section className="subsection">
-            <h3 className="subsection__title">Relacje międzyludzkie</h3>
-            <p className="subsection__info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum aut nostrum nam numquam minus perferendis, natus vel quisquam alias quam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores similique, recusandae inventore ipsum repudiandae autem reprehenderit, amet dolorum deserunt doloremque fugiat magni totam deleniti in ipsam debitis iusto nihil reiciendis.</p>
+            <h3 className="subsection__title">Ciągłość i zmiana</h3>
+            <p className="subsection__info">„Ciągłość i zmiana” – jak podkreślał prof. Stefan Nowak, a za nim prof. Kazimierz Doktór. Innowacja i tradycja – bo nie da się eksplorować nowych krain bez kompasu. Aby prowadzić nowoczesne badania konieczna jest swoboda, elastyczność, szybka wymiana w sieci komunikacji, ale aby prowadzić badania znaczące, ważne, potrzebne jest zakorzenienie w wartościach, odpowiedzialność, wrażliwość – tego uczymy się od mistrzów i oby ten międzypokoleniowy proces w akademii trwał nadal!</p>
+            <span className="about__author">dr. hab Agnieszka Kołodziej-Durnaś prof. US.</span>
           </section>
 
-          <section className="subsection">
-            <h3 className="subsection__title">Zażółć gęślą jaźń</h3>
-            <p className="subsection__info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum aut nostrum nam numquam minus perferendis, natus vel quisquam alias quam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores similique, recusandae inventore ipsum repudiandae autem reprehenderit, amet dolorum deserunt doloremque fugiat magni totam deleniti in ipsam debitis iusto nihil reiciendis.</p>
-          </section>
         </div>
         </article>
 
