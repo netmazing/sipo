@@ -35,7 +35,7 @@ const index = ({data}) => {
 
           <section className="subsection">
             <h3 className="subsection__title">Działalność</h3>
-            <p className="subsection__info">W ciągu niespełna pięciu lat wraz z zespołem zorganizowaliśmy osiem ogólnopolskich konferencji, wydaliśmy kilka ważnych – jak nam się wydaje – publikacji. Dziś tworzymy zespół Socjologii i Psychologii Organizacji – grupę badawczą w nowej strukturze Uniwersytetu.</p>
+            <p className="subsection__info">W ciągu niespełna pięciu lat wraz z zespołem zorganizowaliśmy osiem ogólnopolskich konferencji, wydaliśmy kilka ważnych – jak nam się wydaje – publikacji. Również w roku 2015 rozpoczęłam studia psychologiczne i nawiązałam kontakty naukowe z przedstawicielami tej dyscypliny. Dziś tworzymy zespół Socjologii i Psychologii Organizacji – grupę badawczą w nowej strukturze Uniwersytetu.</p>
           </section>
 
           <section className="subsection">
